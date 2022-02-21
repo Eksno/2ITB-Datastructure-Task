@@ -9,7 +9,7 @@ namespace _2ITB_Datastructure_Task
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Globals.initCarBrands();
+            Globals.addBasicCarBrands();
         }
     }
 }

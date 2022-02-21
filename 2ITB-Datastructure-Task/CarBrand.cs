@@ -8,9 +8,10 @@ namespace _2ITB_Datastructure_Task
 {
     public class CarBrand : Label
     {
-        public void Initialize()
+        public void Initialize(string initialText, Point initialLocation)
         {
-            this.Text = "";
+            this.Text = initialText;
+            this.Location = initialLocation;
         }
     }
 }

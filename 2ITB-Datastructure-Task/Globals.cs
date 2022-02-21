@@ -16,12 +16,7 @@ namespace _2ITB_Datastructure_Task
         {
             for (int i = 0; i < basicCarBrandNames.Length; i++)
             {
-                carBrandNames.Add(basicCarBrandNames[i]);
-
-                carBrands.Add(new CarBrand());
-                carBrands[i].Initialize();
-                carBrands[i].Text = carBrandNames[i];
-                carBrands[i].Location = new Point(10, i * 40);
+                addCarBrand(basicCarBrandNames[i]);
             }
         }
 
@@ -31,9 +26,7 @@ namespace _2ITB_Datastructure_Task
             {
                 carBrandNames.Add(brand);
                 carBrands.Add(new CarBrand());
-                carBrands[-1].Initialize();
-                carBrands[-1].Text = carBrandNames[-1];
-                //carBrands[carBrandNames.Length()];
+                carBrands[carBrands.Count - 1].Initialize(brand, new Point(40, 40));//new Point(10, carBrands.Count * 40));
             }
             else
             {
